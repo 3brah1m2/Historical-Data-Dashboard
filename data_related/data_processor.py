@@ -8,8 +8,3 @@ class DataProcessor:
     def process_data(self):
         self.new_df = self.df[['Close', 'Volume']]
         return self.new_df
-    
-if __name__ == "__main__":
-    processor = DataProcessor('MSFT')
-    processed_data = processor.process_data()
-    print(processed_data)
